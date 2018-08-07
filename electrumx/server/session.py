@@ -437,8 +437,7 @@ class SessionManager(object):
                 await group.spawn(self._restart_if_paused())
             self.logger.warning('group exited for some reason')
         except BaseException as e:
-            self.logger.warning(f'exiting owing to exception {type(e)} {e!r}')
-            self.logger.warning(f'shutdown event: {self.shutdown_event.is_set()}')
+            self.logger.exception(f'exiting owing to exception {e!r}')
             raise
         finally:
             # Close servers and sessions
