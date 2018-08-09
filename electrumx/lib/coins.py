@@ -2092,3 +2092,25 @@ class GroestlcoinTestnet(Groestlcoin):
         '7frvhgofuf522b5i.onion t',
         'aocojvqcybdoxekv.onion t',
     ]
+    
+class MonetaryUnit(Coin):
+    NAME = "MonetaryUnit"
+    SHORTNAME = "MUE"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488ADE4")
+    XPRV_VERBYTES = bytes.fromhex("0488B21E")
+    GENESIS_HASH = ('000002acd994a815401fbaae0e52404b'
+                    '32857efd0b7b0c77b8e0715ccdd6d437')
+    P2PKH_VERBYTE = bytes.fromhex("4c")
+    P2SH_VERBYTES = [bytes.fromhex("10")]
+    WIF_BYTE = bytes.fromhex("cc")
+    TX_COUNT_HEIGHT = 569399
+    TX_COUNT = 2157510
+    TX_PER_BLOCK = 4
+    RPC_PORT = 29947
+    PEERS = [
+        'nodes.muex.io s t',
+        'nodes.monetaryunit.org s t',
+        'nodes.mymue.com s t',
+        'nodes.cryptophi.com s t',
+]
