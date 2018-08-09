@@ -2105,8 +2105,8 @@ class MonetaryUnit(Coin):
     P2PKH_VERBYTE = bytes.fromhex("4c")
     P2SH_VERBYTES = [bytes.fromhex("10")]
     WIF_BYTE = bytes.fromhex("cc")
-    TX_COUNT_HEIGHT = 778464
-    TX_COUNT = 2157510
+    TX_COUNT_HEIGHT = 778546
+    TX_COUNT = 303951
     TX_PER_BLOCK = 4
     RPC_PORT = 29947
     PEERS = [
