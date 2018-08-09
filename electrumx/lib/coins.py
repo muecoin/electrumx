@@ -2102,9 +2102,9 @@ class MonetaryUnit(Coin):
     XPRV_VERBYTES = bytes.fromhex("0488B21E")
     GENESIS_HASH = ('000002acd994a815401fbaae0e52404b'
                     '32857efd0b7b0c77b8e0715ccdd6d437')
-    P2PKH_VERBYTE = bytes.fromhex("4c")
-    P2SH_VERBYTES = [bytes.fromhex("10")]
-    WIF_BYTE = bytes.fromhex("cc")
+    P2PKH_VERBYTE = bytes.fromhex("10")
+    P2SH_VERBYTES = [bytes.fromhex("4c")]
+    WIF_BYTE = bytes.fromhex("7e")
     TX_COUNT_HEIGHT = 778546
     TX_COUNT = 303951
     TX_PER_BLOCK = 4
