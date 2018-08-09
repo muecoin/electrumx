@@ -2105,7 +2105,7 @@ class MonetaryUnit(Coin):
     P2PKH_VERBYTE = bytes.fromhex("4c")
     P2SH_VERBYTES = [bytes.fromhex("10")]
     WIF_BYTE = bytes.fromhex("cc")
-    TX_COUNT_HEIGHT = 778440
+    TX_COUNT_HEIGHT = 778464
     TX_COUNT = 2157510
     TX_PER_BLOCK = 4
     RPC_PORT = 29947
@@ -2115,3 +2115,11 @@ class MonetaryUnit(Coin):
         'nodes.mymue.com s t',
         'nodes.cryptophi.com s t',
     ]
+    SESSIONCLS = DashElectrumX
+    DAEMON = daemon.DashDaemon
+
+    @classmethod
+    def header_hash(cls, header):
+        '''Given a header return the hash.'''
+        import x11_hash
+        return x11_hash.getPoWHash(header)
