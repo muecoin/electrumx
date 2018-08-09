@@ -2092,7 +2092,8 @@ class GroestlcoinTestnet(Groestlcoin):
         '7frvhgofuf522b5i.onion t',
         'aocojvqcybdoxekv.onion t',
     ]
-    
+
+
 class MonetaryUnit(Coin):
     NAME = "MonetaryUnit"
     SHORTNAME = "MUE"
