@@ -2113,5 +2113,5 @@ class MonetaryUnit(Coin):
         'nodes.muex.io s t',
         'nodes.monetaryunit.org s t',
         'nodes.mymue.com s t',
-        'nodes.cryptophi.com s t'
-]
+        'nodes.cryptophi.com s t',
+    ]
