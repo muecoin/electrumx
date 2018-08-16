@@ -1,7 +1,7 @@
-.. image:: https://travis-ci.org/sotblad/electrumx.svg?branch=master
-    :target: https://travis-ci.org/sotblad/electrumx
-.. image:: https://coveralls.io/repos/github/sotblad/electrumx/badge.svg
-    :target: https://coveralls.io/github/sotblad/electrumx
+.. image:: https://travis-ci.org/muecoin/electrumx.svg?branch=master
+    :target: https://travis-ci.org/muecoin/electrumx
+.. image:: https://coveralls.io/repos/github/muecoin/electrumx/badge.svg
+    :target: https://coveralls.io/github/muecoin/electrumx
 
 ===============================================
 ElectrumX - Reimplementation of electrum-server
