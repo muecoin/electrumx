@@ -2109,12 +2109,7 @@ class MonetaryUnit(Coin):
     TX_COUNT = 303951
     TX_PER_BLOCK = 4
     RPC_PORT = 29947
-    PEERS = [
-        'nodes.muex.io s t',
-        'nodes.monetaryunit.org s t',
-        'nodes.mymue.com s t',
-        'nodes.cryptophi.com s t',
-    ]
+    PEERS = []
     SESSIONCLS = DashElectrumX
     DAEMON = daemon.DashDaemon
 
