@@ -2098,10 +2098,10 @@ class MonetaryUnit(Coin):
     NAME = "MonetaryUnit"
     SHORTNAME = "MUE"
     NET = "mainnet"
-    XPUB_VERBYTES = bytes.fromhex("0488ADE4")
-    XPRV_VERBYTES = bytes.fromhex("0488B21E")
-    GENESIS_HASH = ('000002acd994a815401fbaae0e52404b'
-                    '32857efd0b7b0c77b8e0715ccdd6d437')
+    XPUB_VERBYTES = bytes.fromhex("0221312B")
+    XPRV_VERBYTES = bytes.fromhex("022D2533")
+    GENESIS_HASH = ('0b58ed450b3819ca54ab0054c4d220ca'
+                    '4f887d21c9e55d2a333173adf76d987f')
     P2PKH_VERBYTE = bytes.fromhex("10")
     P2SH_VERBYTES = [bytes.fromhex("4c")]
     WIF_BYTE = bytes.fromhex("7e")
@@ -2110,11 +2110,3 @@ class MonetaryUnit(Coin):
     TX_PER_BLOCK = 4
     RPC_PORT = 29947
     PEERS = []
-    SESSIONCLS = DashElectrumX
-    DAEMON = daemon.DashDaemon
-
-    @classmethod
-    def header_hash(cls, header):
-        '''Given a header return the hash.'''
-        import x11_hash
-        return x11_hash.getPoWHash(header)
